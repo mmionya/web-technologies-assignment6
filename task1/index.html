@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Assignment 6 — Party</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body data-task="1">
+  <main>
+    <header>
+      <h1>The birthday party</h1>
+      <p>Assignment 6 · Task 1 · jQuery selectors</p>
+      <nav><a href="index.html" aria-current="page">Task 1</a> · <a href="../index.html">Task 2</a></nav>
+    </header>
+    <section class="controls" aria-label="Cases">
+      <h2>Cases</h2>
+      <div id="cases"></div>
+      <p><button id="clear">Clear</button> <button id="reset">Reset party</button></p>
+      <p id="result" role="status">Choose a case.</p>
+      <details><summary>jQuery chain</summary><pre id="chain">Choose a case.</pre></details>
+    </section>
+    <p class="legend">📱 Phone · 👓 Glasses · 👜 Bag · ☕ Cup · 🍰 Cake crumbs · AITU = student</p>
+    <div id="house"></div>
+    <p class="hint">Each case rebuilds the party and searches the cards with jQuery.</p>
+    <p class="hint">Avatars: <a href="https://www.dicebear.com/styles/adventurer/">Adventurer</a> by Lisa Wischofsky / <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>, via DiceBear.</p>
+  </main>
+  <div id="overlay" hidden>
+    <section id="detail" role="dialog" aria-modal="true" aria-labelledby="detail-name"></section>
+  </div>
+  <script src="../vendor/jquery-3.7.1.min.js"></script>
+  <script src="../data.js"></script>
+  <script src="../cases.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>
